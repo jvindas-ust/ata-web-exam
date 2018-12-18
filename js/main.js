@@ -284,9 +284,11 @@ var player = new Player([
 // Bind our player controls.
 playBtn.addEventListener('click', function() {
   player.play();
+  $('.record').addClass('play');
 });
 pauseBtn.addEventListener('click', function() {
   player.pause();
+  $('.record').removeClass('play');
 });
 prevBtn.addEventListener('click', function() {
   player.skip('prev');
