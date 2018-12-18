@@ -45,14 +45,7 @@
     <div class="album">
       <div class="player">
         <div class="record"></div>
-        <img src="img/needle.png" alt="" class="needle">
-         <p>
-          <audio controls>
-            <source src="media/baffulo-soldier-bob-marley.mp3" type="audio/mpeg">
-  <source src="media/baffulo-soldier-bob-marley.ogg" type="audio/ogg">
-              Your browser does not support the <code>audio</code> element.
-        </audio>
-        </p>
+        <img src="img/needle.png" alt="" class="needle" />
       </div>
       <div class="description">
         <div class="title">
@@ -68,18 +61,52 @@
         </div>
         <p>Legend is a compilation album by Bob Marley and the Wailers. It was released in May 1984 by Island Records. It is a greatest hits collection of singles in its original vinyl format and is the best-selling reggae album of all-time, with over 15 million copies sold in the United States and an estimated 28 million copies sold globally. In 2003, the album was ranked number 46 on Rolling Stone magazine's list of the 500 greatest albums of all time. </p>
         <p class="read_more">
-            <a class="btn" href="https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)" target="_alt">Read More</a>
+            <a class="button" href="https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)" target="_alt">Read More</a>
         </p>
        
       </div>
     </div>
+    <!-- Controls -->
+    <div class="controlsOuter">
+      <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+      </div>
+      <div class="btn" id="playlistBtn"></div>
+      <div class="btn" id="volumeBtn"></div>
+    </div>
+  </div>
+  <div id="title">
+    <span id="track"></span>
+    <div id="timer">0:00</div>
+    <div id="duration">0:00</div>
+  </div>
+
+  
+
+  <!-- Progress -->
+  <div id="waveform"></div>
+  <div id="bar"></div>
+  <div id="progress"></div>
+
+  <!-- Playlist -->
+  <div id="playlist">
+    <div id="list"></div>
+  </div>
+
+  <!-- Volume -->
+  <div id="volume" class="fadeout">
+    <div id="barFull" class="bar"></div>
+    <div id="barEmpty" class="bar"></div>
+    <div id="sliderBtn"></div>
   </div>
   
-  <!-- <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
