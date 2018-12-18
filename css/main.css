@@ -148,6 +148,7 @@ background: linear-gradient(to right, var(--bg-grad-start), var(--bg-grad-end));
      align-items: center;
      justify-content: center;
      mask: url(../img/disk.svg) center / cover;
+     -webkit-mask: url(../img/disk.svg) center / cover;
      animation: rotation 30s infinite linear;
 }
 .record:before, .record:after{
